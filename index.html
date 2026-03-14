@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Lightweight TMS</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lightweight-tms</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
-  <h1>Lightweight TMS</h1>
-  <div id="app"></div>
-  <script src="app.js"></script>
+  <!-- Header -->
+  <header class="header">
+    <h1>lightweight-tms</h1>
+  </header>
+
+  <!-- Layout Wrapper -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <ul>
+        <li><button onclick="loadPage('load-card')">Load Entry</button></li>
+        <li><button onclick="loadPage('navbar')">Navbar Test</button></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div id="app">
+        <!-- Components will load here -->
+        <p>Welcome to lightweight-tms!</p>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="utils/router.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
